@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@400;600&family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="shortcut icon" href="index.html" class="tamañologo" type="image/x-icon"/>
+    <title>Estudio 341</title>
+</head>
+<body>
+    <header class="row">
+        <nav class="navbar navbar-expand-lg navbar-light font-architects fs-5">
+            <div class="container-fluid">
+                <img class="col-xl-2 col-sm-4 logo__tamaño" src="../assets/logo estudio 341.png" alt="logo341"></a>
+                <button class="navbar-toggler collapsed bg-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse ediciones" id="navbarSupportedContent">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <strong><a class="nav-link" href="pages/nosotros.html">Nosotros</a></strong>
+                        </li>
+                        <li class="nav-item">
+                            <strong><a class="nav-link" href="pages/proyectos.html">Proyectos</a></strong>
+                        </li>
+                        <li class="nav-item">
+                            <strong><a class="nav-link" href="pages/recursos.html">Recursos</a></strong>
+                        </li>
+                        <li class="nav-item">
+                            <strong><a class="nav-link" href="pages/servicios.html">Servicios</a></strong>
+                        </li>
+                        <li class="nav-item">
+                            <strong><a class="nav-link" href="pages/contacto.html">Contacto</a></strong>
+                        </li>
+                    </ul>
+                </div>
+            </div>            
+        </nav>
+    </header>
+    <section class="section texto">
+        <form action="servidor.php" method="post">
+        <!--nombre de form-->
+        <h2 class="section__titulo">Formulario de contacto</h2>
+        <h3 class="section__titulo">Completá los datos para que podamos comunicarnos contigo</h3>
+        <div class="section__items">
+        <label for="nombre">Nombre</label>
+        <input 
+          class="bordesredamarillos"
+          type="text"
+          name="nombre"
+          placeholder="escribe tu nombre*"
+          required>
+        <!--apellido de form-->
+        <label for="apellido">Apellido</label>
+        <input 
+          class="bordesredamarillos"
+          type="text"
+          name="apellido"
+          placeholder="escribe tu apellido*"
+          required>
+        <!--mail-->
+        <label for="mail">E-mail</label>
+        <input
+          class="bordesredamarillos"
+          type="text"
+          name="E-mail"
+          placeholder="escribe tu mail*"
+          required>
+        <!--telefono-->
+        <label for="telefono" ">Telefono</label>
+        <input
+          class="bordesredamarillos"
+          type="tel"
+          name="telefono"
+          placeholder="número de teléfono"
+          required
+          >
+        <!--consulta NO requerida-->
+        <h4>Consulta</h4>
+        <textarea class="bordesredamarillos" name="consulta" id="Consulta" cols="30" rows="10">
+  Escribe tu consulta*</textarea></div>
+        <!--boton-->
+        <div class="section__botones">
+          <input type="submit" value="Enviar Formulario" class="bordesredamarillos"/>
+          <input type="reset" value="Borrar Formulario" class="bordesredamarillos"/></div>
+        <h2 class="section__titulo">Te responderemos a la brevedad. ¡Gracias!</h2>
+        </form></section>
+        <div class="mapa__padre">
+        <div class="mapa">
+          <h2 class="mapa__titulo">Nos encontras en:</h2>
+          <iframe class="section__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8101.285287904907!2d-58.034525235918814!3d-31.38185149600225!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95ade8093e560701%3A0x5d1d34b223a6f091!2sConcordia%2C%20Entre%20R%C3%ADos!5e0!3m2!1ses-419!2sar!4v1638153192851!5m2!1ses-419!2sar";" allowfullscreen="" loading="lazy"></iframe>
+        </div></div>
+        <footer class="row mt-2 bg-dark font-architects align-items-center">
+            <div class="col-12 col-md-12 text-center lh-lg ediciones2">
+                <a href="https://www.facebook.com/341.rendering" target="_blank"><i class="bi bi-facebook nav-link icon-success"></i></a>
+                <a href="https://www.instagram.com/341rendering/" target="_blank"><i class="bi bi-instagram nav-link icon-success"></i></a>
+                <a href="mailto:341rendering@gmail.com" target="_blank"><i class="bi bi-envelope nav-link icon-success"></i></a>
+            </div>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>   
+        <script src="js/wow.min.js"></script>
+        <script>
+        new WOW().init();
+        </script>
+</body>
+</html>

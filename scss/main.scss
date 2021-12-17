@@ -1,0 +1,76 @@
+@import "fuentes";
+*{
+    box-sizing: border-box;}
+
+$ancho-fijo: 100%;
+$color-fondo: rgb(121, 121, 121);
+
+body{
+    header{
+        font-family: 'Roboto slab', serif;
+        overflow-x: hidden;
+        background-color: $color-fondo;
+        .logo__tamaño{
+            width: 10%;
+            animation: swing;
+            animation-duration: 1s;}
+        .ediciones{
+            display: flex;
+            flex-direction: row !important;
+            justify-content: space-around !important;}
+        .nav-bar{
+            background-color: $color-fondo !important;}
+        .navbar-light .navbar-nav .nav-link{
+            color: black !important;}
+        .navbar-light .navbar-nav .nav-link:hover{
+            color: yellow !important;}
+        }
+    }
+main{
+    .carousel-caption{
+        display: flex !important;
+        height: 80%;
+        justify-content: center !important;
+        align-items: center !important;
+        width: 75% !important;
+    }
+}
+section{
+    background-color: rgba(255, 255, 0, 0.712);
+    .cajas{
+        padding: 30px 30px;}
+    .cajas-box{
+        width: $ancho-fijo;
+        text-align: center;
+        font-style: 'Roboto slab' !important;}
+    .prueba{
+        span{
+            font-size: 48px;
+            line-height: 48px;
+            display: block;
+            font-weight: 700;
+            color: rgb(66, 66, 66);
+            margin-left: 80px;
+            margin: auto;
+            font-style: 'Roboto slab' !important;}
+        p{
+            padding: 8px 0 0 0;
+            font-family: 'Roboto slab', sans-serif;
+            font-weight: 600;
+            font-size: 14px;
+            color: rgb(66, 66, 66);}
+        }
+    .section-bg{
+        display: flex;
+        width: 100vw;}
+}
+footer{
+    .ediciones2{
+        display: flex;
+        flex-direction: row !important;
+        justify-content: center !important;
+        width: $ancho-fijo;
+        background-color: $color-fondo !important;}
+    .icon-success{
+        color: yellow;}
+    }
